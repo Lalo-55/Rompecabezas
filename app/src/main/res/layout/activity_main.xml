@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivTarge3"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:tag="figure3"
+        app:layout_constraintStart_toEndOf="@+id/ivTarget2"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:srcCompat="@drawable/ic_baseline_anchor_24" />
+
+    <ImageView
+        android:id="@+id/ivDra3"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:tag="figure3"
+        app:layout_constraintStart_toEndOf="@+id/ivDrag2"
+        app:layout_constraintTop_toBottomOf="@+id/ivTarget2"
+        app:srcCompat="@drawable/ic_baseline_anchor_24" />
+
+    <ImageView
+        android:id="@+id/ivDrag1"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:tag="figure1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivTarget1"
+        app:srcCompat="@drawable/ic_baseline_alarm_on_24"
+        tools:srcCompat="@drawable/ic_baseline_alarm_on_24" />
+
+    <ImageView
+        android:id="@+id/ivTarget1"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:tag="figure1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:srcCompat="@drawable/ic_baseline_alarm_on_24" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Arrastra las figuras"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivDrag2"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:tag="figure2"
+        app:layout_constraintStart_toEndOf="@+id/ivDrag1"
+        app:layout_constraintTop_toBottomOf="@+id/ivTarget2"
+        app:srcCompat="@drawable/ic_baseline_directions_transit_24" />
+
+    <ImageView
+        android:id="@+id/ivTarget2"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:tag="figure2"
+        app:layout_constraintStart_toEndOf="@+id/ivTarget1"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:srcCompat="@drawable/ic_baseline_directions_transit_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
